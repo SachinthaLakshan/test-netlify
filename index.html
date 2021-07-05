@@ -13,29 +13,23 @@
 <body class="is-preload">
 
   <form name="contact" method="POST" data-netlify="true">
-    <div class="fields">
-      <div class="field">
-        <p>
-          <label for="name">Name</label>
-
-          <input type="text" name="name" id="name" />
-        </p>
-      </div>
-      <div class="field">
-        <p>
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
-        </p>
-      </div>
-      <div class="field">
-        <p>
-          <label for="message">Message</label>
-          <textarea name="message" id="message" rows="3"></textarea>
-        </p>
-      </div>
-    </div>
     <p>
-      <input type="submit" value="Send Message" />
+      <label>Your Name: <input type="text" name="name" /></label>
+    </p>
+    <p>
+      <label>Your Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <label>Your Role: <select name="role[]" multiple>
+          <option value="leader">Leader</option>
+          <option value="follower">Follower</option>
+        </select></label>
+    </p>
+    <p>
+      <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
     </p>
   </form>
 
