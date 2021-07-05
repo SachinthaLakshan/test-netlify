@@ -14,19 +14,21 @@
 
   <form name="contact" method="POST" data-netlify="true">
 
-    <label>Your
-      name<input type="text" id="form-name" name="form-name" /></label>
+    <label>Your Name: <input type="text" name="name" /></label>
 
 
-    <label>Your
-      email<input type="email" id="form-email" name="form-email" /></label>
+    <label>Your Email: <input type="email" name="email" /></label>
 
 
-    <label>Your
-      message<textarea rows="5" type="text" id="form-message" name="form-message"></textarea></label>
+    <label>Your Role: <select name="role[]" multiple>
+        <option value="leader">Leader</option>
+        <option value="follower">Follower</option>
+      </select></label>
 
-    <button type="submit">Send
-      Message</button>
+    <label>Message: <textarea name="message"></textarea></label>
+
+    <button type="submit">Send</button>
+
   </form>
 
 
